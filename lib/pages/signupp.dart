@@ -6,6 +6,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
+import 'package:flutter/widgets.dart';
 
 class signupp extends StatefulWidget {
   const signupp({Key key}) : super(key: key);
@@ -29,10 +30,12 @@ class _signuppState extends State<signupp> {
           child: Container(
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
-            color: Colors.black,
+            color: Colors.blueGrey[900],
             child: Column(
+
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+
                 Text(
                   "Sign Up",
                   style: TextStyle(
@@ -53,19 +56,40 @@ class _signuppState extends State<signupp> {
                 SizedBox(
                   height: 15,
                 ),
-                Text("OR",style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 18,
-                ),),
+
+                Row(children: <Widget>[
+                  Expanded(
+                    child: new Container(
+                        margin: const EdgeInsets.only(left: 70.0, right: 10.0),
+                        child: Divider(
+                          color: Colors.white,
+                          height: 60,
+                        )),
+                  ),
+                  Text("Or",style: TextStyle(
+                    color: Colors.white,
+
+                    fontSize: 17,
+
+                  ),),
+                  Expanded(
+                    child: new Container(
+                        margin: const EdgeInsets.only(left: 10.0, right: 70.0),
+                        child: Divider(
+                          color: Colors.white,
+                          height:60,
+                        )),
+                  ),
+                ]),
                 SizedBox(
                   height: 15,
                 ),
-                textItem("Email...",_emailController , false),
+                textItem("Email",_emailController , false),
                 SizedBox(
                   height: 15,
                 ),
 
-                textItem("Password...",_pwdController, true),
+                textItem("Password",_pwdController, true),
                 SizedBox(
                   height: 15,
                 ),
@@ -111,8 +135,8 @@ class _signuppState extends State<signupp> {
     );
   }
   Widget buttonItem(
-      String imagepath , String buttonName , double size , Function onTap
-      )
+    String imagepath, String buttonName, double size, Function onTap
+  )
   {
     return InkWell(
       onTap: ()
@@ -120,11 +144,11 @@ class _signuppState extends State<signupp> {
 
       },
       child: Container(
-        width: MediaQuery.of(context).size.width - 60,
+        width: MediaQuery.of(context).size.width -60,
         height: 60,
         child: Card(
-          elevation: 8,
-          color: Colors.black,
+          elevation: 50,
+          color: Colors.grey[900],
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15),
               side: BorderSide(
@@ -183,10 +207,14 @@ class _signuppState extends State<signupp> {
      },
      child: Container(
        height: 60,
-       width: MediaQuery.of(context).size.width - 90,
+       width: MediaQuery.of(context).size.width -100,
        decoration: BoxDecoration(
-         borderRadius: BorderRadius.circular(20),
-         gradient: LinearGradient(colors: [Color(0xfffd746c),Color(0xffff9068),Color(0xfffd746c)])
+         borderRadius: BorderRadius.circular(25),
+           gradient: LinearGradient(
+             colors: [Colors.teal[700], Colors.teal[900]],
+             begin: FractionalOffset(0.0, 0.0),
+             end: FractionalOffset(0.3, 0.0),
+             stops: [0.0, 1.0],)
        ),
        child: Center(
          child:circular?CircularProgressIndicator(): Text("Signup",style: TextStyle(
