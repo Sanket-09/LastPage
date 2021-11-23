@@ -30,7 +30,7 @@ class _signuppState extends State<signupp> {
           child: Container(
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
-            color: Colors.blueGrey[900],
+            color: Colors.white,
             child: Column(
 
               mainAxisAlignment: MainAxisAlignment.center,
@@ -40,7 +40,7 @@ class _signuppState extends State<signupp> {
                   "Sign Up",
                   style: TextStyle(
                       fontSize: 35,
-                      color: Colors.white,
+                      color: Colors.black,
                       fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
@@ -62,12 +62,12 @@ class _signuppState extends State<signupp> {
                     child: new Container(
                         margin: const EdgeInsets.only(left: 70.0, right: 10.0),
                         child: Divider(
-                          color: Colors.white,
+                          color: Colors.black,
                           height: 60,
                         )),
                   ),
                   Text("Or",style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
 
                     fontSize: 17,
 
@@ -76,7 +76,7 @@ class _signuppState extends State<signupp> {
                     child: new Container(
                         margin: const EdgeInsets.only(left: 10.0, right: 70.0),
                         child: Divider(
-                          color: Colors.white,
+                          color: Colors.black,
                           height:60,
                         )),
                   ),
@@ -103,7 +103,7 @@ class _signuppState extends State<signupp> {
 
                     Text("Already have an account?",
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Colors.black,
                         fontSize: 18,
                       ),),
 
@@ -119,7 +119,7 @@ class _signuppState extends State<signupp> {
                       },
                       child: Text("   Login",
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ),),
@@ -148,12 +148,12 @@ class _signuppState extends State<signupp> {
         height: 60,
         child: Card(
           elevation: 50,
-          color: Colors.grey[900],
+          color: Colors.blue[700],
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15),
               side: BorderSide(
                 width: 1,
-                color: Colors.grey,
+                color: Colors.black,
 
               )
           ),
@@ -211,7 +211,7 @@ class _signuppState extends State<signupp> {
        decoration: BoxDecoration(
          borderRadius: BorderRadius.circular(25),
            gradient: LinearGradient(
-             colors: [Colors.teal[700], Colors.teal[900]],
+             colors: [Colors.blue[700], Colors.blue[700]],
              begin: FractionalOffset(0.0, 0.0),
              end: FractionalOffset(0.3, 0.0),
              stops: [0.0, 1.0],)
@@ -240,7 +240,7 @@ class _signuppState extends State<signupp> {
       controller: controller,
     obscureText: obscureText,
     style: TextStyle(
-      color: Colors.white,
+      color: Colors.black,
       fontSize: 17,
     ),
     decoration: InputDecoration(
@@ -257,7 +257,7 @@ class _signuppState extends State<signupp> {
   borderRadius: BorderRadius.circular(15),
   borderSide: BorderSide(
   width: 1,
-    color: Colors.grey,
+    color: Colors.black,
 
     ),
     ),

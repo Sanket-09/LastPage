@@ -28,7 +28,7 @@ class _signinnState extends State<signinn> {
           child: Container(
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
-            color: Colors.blueGrey[900],
+            color: Colors.white,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -36,7 +36,7 @@ class _signinnState extends State<signinn> {
                   "Sign In",
                   style: TextStyle(
                       fontSize: 35,
-                      color: Colors.white,
+                      color: Colors.black,
                       fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
@@ -53,7 +53,7 @@ class _signinnState extends State<signinn> {
                 Text(
                   "OR",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                     fontSize: 18,
                   ),
                 ),
@@ -78,7 +78,7 @@ class _signinnState extends State<signinn> {
                     Text(
                       "Dont have an account?",
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Colors.black,
                         fontSize: 18,
                       ),
                     ),
@@ -92,7 +92,7 @@ class _signinnState extends State<signinn> {
                       child: Text(
                         "   SignUp",
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ),
@@ -106,7 +106,7 @@ class _signinnState extends State<signinn> {
                 Text(
                   "Forgot Password?",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
                   ),
@@ -125,7 +125,7 @@ class _signinnState extends State<signinn> {
       height: 60,
       child: Card(
         elevation: 50,
-        color: Colors.grey[900],
+        color: Colors.blue[700],
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),
             side: BorderSide(
@@ -181,7 +181,7 @@ class _signinnState extends State<signinn> {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25),
             gradient: LinearGradient(
-              colors: [Colors.teal[700], Colors.teal[900]],
+              colors: [Colors.blue[700], Colors.blue[700]],
               begin: FractionalOffset(0.0, 0.0),
               end: FractionalOffset(0.3, 0.0),
               stops: [0.0, 1.0],)
@@ -210,12 +210,12 @@ class _signinnState extends State<signinn> {
         controller: controller,
         obscureText: obscureText,
         style: TextStyle(
-          color: Colors.white,
+          color: Colors.black,
           fontSize: 17,
         ),
         decoration: InputDecoration(
           labelText: labelText,
-          labelStyle: TextStyle(fontSize: 17, color: Colors.white),
+          labelStyle: TextStyle(fontSize: 17, color: Colors.black),
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15),
               borderSide: BorderSide(
@@ -226,7 +226,7 @@ class _signinnState extends State<signinn> {
             borderRadius: BorderRadius.circular(15),
             borderSide: BorderSide(
               width: 1,
-              color: Colors.grey,
+              color: Colors.black,
             ),
           ),
         ),
